@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+  <meta charset="UTF-8">
+  <title>شقة 1 - عمارة 1</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body dir="rtl">
+
+  <h2>شقة 1 - عمارة 1</h2>
+
+  <!-- عرض معلومات المالك والساكن -->
+  <button onclick="showOwner()">عرض بيانات المالك والساكن</button>
+  <div id="ownerData" style="display:none;">
+    <p>المالك: أحمد علي</p>
+    <p>الساكن الحالي: محمد حسن</p>
+  </div>
+
+  <div id="passwordPrompt" style="display:none;">
+    <input type="password" id="passwordInput" placeholder="كلمة المرور">
+    <button onclick="checkPassword()">تأكيد</button>
+    <p id="wrongPassword" style="color:red; display:none;">❌ كلمة المرور غير صحيحة</p>
+  </div>
+
+  <!-- حالة الدفع -->
+  <div>
+    <h3>💳 حالة الدفع السنوي: <span style="color:red;">❌ لم يتم الدفع</span></h3>
+    <button onclick="document.getElementById('paymentForm').style.display='block'">الدفع اليدوي</button>
+  </div>
+
+  <!-- نموذج الدفع اليدوي -->
+  <form id="paymentForm" action="handle_payment.php" method="POST" enctype="multipart/form-data" style="display:none; margin-top: 20px;">
+    <label>الاسم:</label><br>
+    <input type="text" name="name" required><br><br>
+
+    <label>كود العملية:</label><br>
+    <input type="text" name="transaction_code" required><br><br>
+
+    <label>وسيلة الدفع:</label><br>
+    <select name="method" required>
+      <option value="فودافون كاش">فودافون كاش</option>
+      <option value="إنستا باي">إنستا باي</option>
+      <option value="البنك">البنك</option>
+    </select><br><br>
+
+    <label>صورة الوصل:</label><br>
+    <input type="file" name="receipt" accept="image/*" required><br><br>
+
+    <input type="hidden" name="apartment" value="شقة 1 - عمارة 1">
+
+    <button type="submit">إرسال</button>
+  </form>
+
+  <script>
+    function showOwner() {
+      document.getElementById("passwordPrompt").style.display = "block";
+    }
+
+    function checkPassword() {
+      const correctPassword = "1234"; // يمكنك تغييرها
+      const input = document.getElementById("passwordInput").value;
+
+      if (input === correctPassword) {
+        document.getElementById("ownerData").style.display = "block";
+        document.getElementById("wrongPassword").style.display = "none";
+      } else {
+        document.getElementById("wrongPassword").style.display = "block";
+      }
+    }
+  </script>
+
+</body>
+</html>

@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>دار مصر - Dar Masr</title>
+  <link rel="stylesheet" href="style/style.css">
+</head>
+<body>
+
+  <header class="main-header">
+    <nav class="nav-bar">
+      <div class="nav-links left-links">
+        <a href="index.html">الرئيسية</a>
+        <a href="about-kompound.html">عن الكومباوند</a>
+      </div>
+  
+      <div class="logo">
+        <img src="images/logo.png" alt="Logo">
+      </div>
+      <div class="nav-links">
+        <a href="mowaten.html">المواطن</a>
+        <a href="Register.html">التسجيل</a>
+        <a href="Login.html">تسجيل الدخول</a>
+      </div>
+    </nav>
+  </header>
+  
+  <!-- صورة الكومباوند -->
+  <section class="hero-section">
+    <div class="overlay"></div>
+    <img src="images/compound 1.jpg"
+         alt="Compound View"
+         class="hero-img">
+    <div class="hero-text">
+      <h2>مرحبًا بك في دار مصر</h2>
+      <p>غرب المال والاعمال</p>
+    </div>
+  </section>
+  
+  
+
+  <!-- اتحاد الملاك -->
+  <section class="owners-section">
+    <h2 class="section-title">اتحاد الملاك</h2>
+    <div class="owners-cards">
+      
+      <div class="owner-card">
+        <img src="images/helmy elkome.jpg" alt="Owner" class="owner-img">
+        <h3>م / حلمي الكومي</h3>
+        <p>0105620566</p>
+        <a href="#" class="action-btn">مراسلة واتس اب</a>
+      </div>
+      
+      <div class="owner-card">
+        <img src="images/Aasem.png" alt="Owner" class="owner-img">
+        <h3>م/عاصم محمد</h3>
+        <p>01006777897</p>
+        <a href="#" class="action-btn">مراسلة واتس اب</a>
+      </div>
+      
+      <div class="owner-card">
+        <img src="images/osama.jpg" alt="Owner" class="owner-img">
+        <h3>م / اسامه حجازي</h3>
+        <p>01006584177</p> 
+        <a href="#" class="action-btn">مراسلة واتس اب</a>
+      </div>
+      <!-- زوّد كروت زي ما تحب -->
+    </div>
+  </section>
+  
+ 
+  <!-- صور الجاردن والباركنج -->
+ <div class="photo-garden">
+  <h2 class="Gar">نظرة علي جمال الطبيعة</h2>
+  <section class="slider-section">
+    <div class="slider-container">
+      <div class="slider">
+        <img src="images/جاردن 1.png" class="slide active" alt="Garden 1">
+        <img src="images/جاردن 2.jpeg" class="slide" alt="Garden 2">
+        <img src="images/جاردن 3.png" class="slide" alt="Parking 1">
+        <img src="images/جاردن 4.png" class="slide" alt="Garden 3">
+        <img src="images/جاردن 5.png" class="slide" alt="Parking 2">
+        <img src="images/جاردن 6.png" class="slide" alt="Parking 1">
+      </div>
+      <button class="prev" onclick="prevSlide()">❯</button>
+      <button class="next" onclick="nextSlide()">❮</button>
+    </div>
+  </div>
+  </section>
+<!--العماير  -->
+
+
+<div class="scroll-wrapper">
+  <button class="scroll-btn left" onclick="scrollLeftBuildings()">&#x276E;</button>
+
+  <div class="buildings-slider" id="buildingsSlider">
+    <!-- عمارة 1 -->
+    <div class="building-card">
+      <img src="images/العمارات/nambur1.jpg" alt="عمارة 1">
+      <h3>عمارة 1</h3>
+      <a href="عمارات html/عماره 1.html" class="enter-btn">دخول</a>
+    </div>
+
+    <!-- عمارة 2 -->
+    <div class="building-card">
+      <img src="images/العمارات/nambur2.jpg" alt="عمارة 2">
+      <h3>عمارة 2</h3>
+      <a href="عمارات html/عماره 2.html" class="enter-btn">دخول</a>
+    </div>
+
+    <!-- عمارة 3 -->
+    <div class="building-card">
+      <img src="images/العمارات/nambur3.jpg" alt="عمارة 3">
+      <h3>عمارة 3</h3>
+      <a href="عمارات html/عماره 3.html" class="enter-btn">دخول</a>
+    </div>
+
+    <!-- عمارة 4 -->
+    <div class="building-card">
+      <img src="images/العمارات/nambur4.jpg" alt="عمارة 4">
+      <h3>عمارة 4</h3>
+      <a href="عمارات html/عماره 4.html" class="enter-btn">دخول</a>
+    </div>
+
+    <!-- عمارة 5 -->
+    <div class="building-card">
+      <img src="images/العمارات/nambur5.jpg" alt="عمارة 5">
+      <h3>عمارة 5</h3>
+      <a href="عمارات html/عماره 5.html" class="enter-btn">دخول</a>
+    </div>
+
+    <!-- المزيد -->
+    <a href="العمارات.html" class="more-card " id="moreBuildings">
+      <h3 class="h33">====> </h3>
+    </a>
+  </div>
+
+  <button class="scroll-btn right" onclick="scrollRightBuildings()">&#x276F;</button>
+</div>
+
+<section class="fixed-background">
+  <div class="fixed-overlay">
+    <h2>LOGO</h2>
+  </div>
+</section>
+<section class="features">
+  <h2>مميزاتنا</h2>
+  <div class="features-container">
+    <div class="feature-card">
+      <img src="images/هدوء.jpeg" alt="جودة عالية">
+      <h3>الهدوء السكني</h3>
+      <p></p>
+    </div>
+    <div class="feature-card">
+      <img src="images/كاميرات.jpeg" alt="أمان كامل">
+      <h3>أمان كامل</h3>
+      <p>نوفر لك بيئة سكنية آمنة ومحمية على مدار الساعة.</p>
+    </div>
+    <div class="feature-card">
+      <img src="images/مساحات.jpeg" alt="مساحات خضراء">
+      <h3>مساحات خضراء</h3>
+      <p>استمتع بجمال الطبيعة والمساحات الواسعة داخل الكومباوند.</p>
+    </div>
+  </div>
+</section>
+<footer>
+  <div class="footer-container">
+    <!-- خريطة الكومباوند -->
+    <div class="map-container">
+      <h1 class="h12">موقع الكومباوند</h1>
+      <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6887.110659992335!2d31.737117806420898!3d30.33516369999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14f80726ac124647%3A0x80723ed5d4e9dabb!2z2YPZhdio2YjZhtivINiv2KfYsSDZhdi12LEg2LrYsdioINin2YTZhdin2YQg2YjYp9mE2KfYudmF2KfZhA!5e0!3m2!1sar!2seg!4v1745622716127!5m2!1sar!2seg" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+<br>
+
+
+
+    <!-- حقوق الملكية -->
+    <div class="rights">
+     <div class="h11">
+      <h1 class="h13" > تم صنع هذا الموقع من خلال  </h1>
+      <a class="islam"href="https://my-website-lake-theta.vercel.app/"> Islam Ahmed </a></div>
+    </div>
+  </div> 
+      <!-- روابط سريعة -->
+      <div class="quick-links">
+        <a href="#complaints" class="footer-link">الشكاوى</a>
+        <a href="#contact" class="footer-link">تواصل معنا</a>
+      </div>
+  <p class="pp">© 2025 جميع الحقوق محفوظة </p>
+</footer>
+<script>
+function toggleCitizenMenu() {
+  const list = document.getElementById('citizenList');
+  const arrow = document.getElementById('arrow');
+
+  if (list.classList.contains('hidden')) {
+    list.classList.remove('hidden');
+    arrow.style.transform = 'rotate(180deg)'; // السهم يتقلب للأعلى
+  } else {
+    list.classList.add('hidden');
+    arrow.style.transform = 'rotate(0deg)'; // السهم يرجع للأسفل
+  }
+}
+</script>
+<script>
+  const buildingsSlider = document.getElementById('buildingsSlider');
+const moreBuildings = document.getElementById('moreBuildings');
+
+function scrollLeftBuildings() {
+  buildingsSlider.scrollBy({ left: 220, behavior: 'smooth' });
+}
+
+function scrollRightBuildings() {
+  buildingsSlider.scrollBy({ left: -220, behavior: 'smooth' });
+}
+
+buildingsSlider.addEventListener('scroll', () => {
+  const scrollEnd = buildingsSlider.scrollWidth - buildingsSlider.clientWidth;
+  if (buildingsSlider.scrollLeft >= scrollEnd - 5) {
+    moreBuildings.classList.remove('hidden');
+  } else {
+    moreBuildings.classList.add('hidden');
+  }
+});
+
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <script>
+    let currentSlide = 0;
+    const slides = document.querySelectorAll('.slide');
+  
+    function showSlide(index) {
+      slides.forEach((slide, i) => {
+        slide.classList.remove('active');
+        if (i === index) slide.classList.add('active');
+      });
+    }
+  
+    function nextSlide() {
+      currentSlide = (currentSlide + 1) % slides.length;
+      showSlide(currentSlide);
+    }
+  
+    function prevSlide() {
+      currentSlide = (currentSlide - 1 + slides.length) % slides.length;
+      showSlide(currentSlide);
+    }
+  
+    // Auto slide every 5 seconds
+    setInterval(nextSlide, 5000);
+  
+    // Show first slide
+    showSlide(currentSlide);
+  </script>
+  
+
+  <script src="js/script.js"></script>
+</body>
+</html>

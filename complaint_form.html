@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <title>تقديم شكوى</title>
+  <link href="https://fonts.googleapis.com/css2?family=Cairo&display=swap" rel="stylesheet">
+  <style>
+     /*الشريط 2*/
+  .main-header {
+    background-color: #ffffc3;
+    padding: 35px 0;
+    box-shadow: 0px 2px 16px 7px rgb(168 16 16);
+    border-bottom-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+}
+
+.nav-bar {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 0 20px;
+}
+
+.nav-links {
+  display: flex;
+  gap: 20px;
+}
+
+.nav-links a {
+  color: #8b0000; /* أحمر دموي */
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 18px;
+  position: relative;
+  transition: color 0.3s ease;
+}
+
+.nav-links a::after {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 2px;
+  background-color: #8b0000;
+  bottom: -5px;
+  left: 50%;
+  transform: translateX(-50%);
+  transition: width 0.3s ease;
+}
+
+.nav-links a:hover {
+  color: #b22222;
+}
+
+.nav-links a:hover::after {
+  width: 100%;
+}
+
+.logo img {
+  height: 70px;
+  width: auto;
+  transition: transform 0.3s ease;
+}
+
+.logo img:hover {
+  transform: scale(1.1);
+}
+
+/* موبايل */
+@media (max-width: 768px) {
+  .nav-bar {
+    flex-direction: row;
+    display: flex;
+    align-items: center;
+  }
+
+  .nav-links {
+    margin: 10px 0;
+  }
+}
+.main-header {
+  background-color: #ffffbe;
+  padding: 15px 0;
+  box-shadow: -1px 8px 18px 8px #730808;
+}
+
+.nav-bar {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 0 20px;
+}
+
+.nav-links {
+  display: flex;
+  gap: 20px;
+}
+
+.nav-links a {
+  color: #8b0000; /* أحمر دموي */
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 18px;
+  position: relative;
+  transition: color 0.3s ease;
+}
+
+.nav-links a::after {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 2px;
+  background-color: #8b0000;
+  bottom: -5px;
+  left: 50%;
+  transform: translateX(-50%);
+  transition: width 0.3s ease;
+}
+
+.nav-links a:hover {
+  color: #b22222;
+}
+
+.nav-links a:hover::after {
+  width: 100%;
+}
+
+.logo img {
+  height: 70px;
+  width: auto;
+  transition: transform 0.3s ease;
+}
+
+.logo img:hover {
+  transform: scale(1.1);
+}
+
+/* منيو المواطن */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropbtn {
+  background-color: #f5f5dc; /* بيج */
+  color: #8b0000;
+  padding: 16px;
+  font-size: 18px;
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+  transition: color 0.3s ease;
+  margin-top: -19px;
+
+}
+
+.dropbtn:hover {
+  color: #b22222;
+}
+
+.dropbtn::after {
+  content: " ▼"; /* السهم */
+  font-size: 14px;
+  margin-left: 5px;
+  
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f5f5dc;
+  min-width: 48px;
+  box-shadow: 0px 8px 16px rgb(247 12 12 / 81%);
+  z-index: 1;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown-content a {
+  color: #8b0000;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {
+  color: #b22222;
+}
+
+/* الموبايل */
+@media (max-width: 768px) {
+  .nav-bar {
+    flex-direction: row;
+    display: flex;
+  }
+
+  .nav-links {
+      flex-direction: column;
+      gap: 10px;
+  }
+
+  .dropbtn {
+      font-size: 16px;
+  }
+}
+
+ 
+    body {
+      font-family: 'Cairo', sans-serif;
+      background-color: #f8f4e3;
+      margin: 0;
+      padding: 0;
+    }
+
+    .container {
+        max-width: 500px;
+    margin: 80px auto;
+    background-color: #ffffc3;
+    padding: 65px;
+    border-radius: 10px;
+    border: 7px solid #8B0000;
+    box-shadow: 0 0 20px 20px rgb(116 21 21 / 78%);
+}
+
+
+    h2 {
+      text-align: center;
+      color: #8B0000;
+      margin-bottom: 30px;
+    }
+
+    label {
+      display: block;
+      margin: 10px 0 5px;
+      font-weight: bold;
+    }
+
+    input, textarea {
+      width: 100%;
+      padding: 12px;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+      margin-bottom: 15px;
+      font-size: 16px;
+    }
+
+    button {
+      width: 100%;
+      padding: 12px;
+      background-color: #8B0000;
+      color: white;
+      border: none;
+      border-radius: 6px;
+      font-size: 18px;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background-color: #a10000;
+    }
+
+    .success-message {
+      color: green;
+      text-align: center;
+      display: none;
+      margin-top: 20px;
+    }
+  </style>
+</head>
+<body>
+  <header class="main-header">
+    <nav class="nav-bar">
+      <div class="nav-links left-links">
+        <a href="index.html">الرئيسية</a>
+        <a href="about-kompound.html">عن الكومباوند</a>
+      </div>
+  
+      <div class="logo">
+        <img src="images/logo.png" alt="Logo">
+      </div>
+      <div class="nav-links">
+        <a href="mowaten.html">المواطن</a>
+        <a href="Register.html">التسجيل</a>
+        <a href="Login.html">تسجيل الدخول</a>
+      </div>
+    </nav>
+  </header>
+  <div class="container">
+    <h2>تقديم شكوى</h2>
+    
+    
+        <?php if (isset($_GET['success'])): ?>
+          <div class="success-message">تم إرسال الشكوى بنجاح!</div>
+        <?php endif; ?>
+    <form method="POST" action="handle_complaint.php">
+        <label for="name">الاسم:</label>
+        <input type="text" id="name" name="name" required>
+      
+        <label for="building">رقم العمارة:</label>
+        <input type="text" id="building" name="building" required>
+      
+        <label for="apartment">رقم الشقة:</label>
+        <input type="text" id="apartment" name="apartment" required>
+      
+        <label for="message">الشكوى:</label>
+        <textarea id="message" name="message" rows="5" required></textarea>
+      
+        <button type="submit">إرسال</button>
+      </form>
+      
+
+  <script>
+    function submitComplaint(e) {
+      e.preventDefault();
+      document.getElementById("successMessage").style.display = "block";
+      e.target.reset();
+    }
+  </script>
+
+</body>
+</html>

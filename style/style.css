@@ -1,0 +1,1020 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    background-color: #f5f5dc; /* بيج */
+  }
+  
+  /* الشريط العلوي */
+  .top-bar {
+    background-color: #f5f5dc;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+  }
+  
+  .left-side {
+    display: flex;
+    align-items: center;
+  }
+  
+  .menu-button {
+    background-color: transparent;
+    border: 2px solid #8b0000;
+    padding: 6px;
+    height: 24px;
+    width: 30px;
+    cursor: pointer;
+    margin-left: 10px;
+  }
+  
+  menu-button span {
+    background-color: #8b0000;
+    height: 4px;
+    width: 100%;
+    display: block;
+    border-radius: 54px;}
+  
+  .logo {
+    height: 47px;
+  }
+  
+  .center {
+    flex-grow: 1;
+    text-align: center;
+  }
+  
+  .compound-name {
+    font-size: 25px;
+    color: #8b0000;
+    text-shadow: 0 0 20px #ff0000;
+    margin: 0;
+  }
+  
+  .right-side {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  .action-btn {
+    padding: 8px 16px;
+    border: 2px solid #8b0000;
+    color: #8b0000;
+    background-color: transparent;
+    border-radius: 6px;
+    transition: 0.3s;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  .action-btn:hover {
+    background-color: #8b0000;
+    color: white;
+  }
+  
+  .light-toggle {
+    background-color: #8b0000;
+    border: none;
+    border-radius: 20%;
+    padding: 8px;
+    box-shadow: 0 0 10px #8b0000;
+    cursor: pointer;
+  }
+  
+  .mode-icon {
+    color: white;
+    font-size: 20px;
+  }
+  .hero-section {
+    position: relative;
+    width: 100%;
+    height: 90vh;
+    overflow: hidden;
+    background-color: #f5f5dc; /* بيج */
+  }
+  
+  .hero-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    display: block;
+  }
+  
+  .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4); /* تشويش/تغميقة خفيفة */
+    z-index: 1;
+  }
+  
+  .hero-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #ffe3e3;
+    z-index: 2;
+    text-align: center;
+    text-shadow: 7px 10px 10px #e60e0e;
+  }
+  
+  .hero-text h2 {
+    font-size: 51px;
+    margin: 0 0 10px;
+  }
+  
+  .hero-text p {
+    font-size: 27px;
+    margin: 0;
+  }
+  
+  
+  /*الشريط 2*/
+  .main-header {
+    background-color: #ffffc3;
+    padding: 35px 0;
+    box-shadow: 0px 2px 16px 7px rgb(168 16 16);
+    border-bottom-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+}
+
+.nav-bar {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 0 20px;
+}
+
+.nav-links {
+  display: flex;
+  gap: 20px;
+}
+
+.nav-links a {
+  color: #8b0000; /* أحمر دموي */
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 18px;
+  position: relative;
+  transition: color 0.3s ease;
+}
+
+.nav-links a::after {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 2px;
+  background-color: #8b0000;
+  bottom: -5px;
+  left: 50%;
+  transform: translateX(-50%);
+  transition: width 0.3s ease;
+}
+
+.nav-links a:hover {
+  color: #b22222;
+}
+
+.nav-links a:hover::after {
+  width: 100%;
+}
+
+.logo img {
+  height: 70px;
+  width: auto;
+  transition: transform 0.3s ease;
+}
+
+.logo img:hover {
+  transform: scale(1.1);
+}
+
+/* موبايل */
+@media (max-width: 768px) {
+  .nav-bar {
+    flex-direction: row;
+    display: flex;
+    align-items: center;
+  }
+
+  .nav-links {
+    margin: 10px 0;
+  }
+}
+.main-header {
+  background-color: #ffffbe;
+  padding: 15px 0;
+  box-shadow: -1px 8px 18px 8px #730808;
+}
+
+.nav-bar {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 0 20px;
+}
+
+.nav-links {
+  display: flex;
+  gap: 20px;
+}
+
+.nav-links a {
+  color: #8b0000; /* أحمر دموي */
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 18px;
+  position: relative;
+  transition: color 0.3s ease;
+}
+
+.nav-links a::after {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 2px;
+  background-color: #8b0000;
+  bottom: -5px;
+  left: 50%;
+  transform: translateX(-50%);
+  transition: width 0.3s ease;
+}
+
+.nav-links a:hover {
+  color: #b22222;
+}
+
+.nav-links a:hover::after {
+  width: 100%;
+}
+
+.logo img {
+  height: 55px;
+  width: auto;
+  transition: transform 0.3s ease;
+}
+
+.logo img:hover {
+  transform: scale(1.1);
+}
+
+
+
+/* الموبايل */
+@media (max-width: 768px) {
+  .nav-bar {
+    flex-direction: row;
+    display: flex;
+  }
+
+  .nav-links {
+      flex-direction: column;
+      gap: 10px;
+  }
+
+  .dropbtn {
+      font-size: 16px;
+  }
+}
+
+  
+  /* اتحاد الملاك */
+  .owners-section {
+    padding: 24px 2px;
+    text-align: center;
+    border: solid 10px #640000;
+    border-radius: 47px;
+}
+.Gar{
+  padding: 24px 2px;
+  text-align: center;
+  border-radius: 47px;
+}
+  .photo-garden{
+    border: solid 10px #640000;
+    margin: 30px;
+    background-color: #ffffb3;
+    border-radius: 27px;
+    box-shadow: 0 0 20px 17px #8b0000;  }
+  .section-title {
+    font-size: 32px;
+    color: #8b0000;
+    margin-bottom: 30px;
+  }
+  
+  .owners-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+  }
+  
+  .owner-card {
+    background-color: #ffffd3;
+    border: 2px solid #8b0000;
+    box-shadow: -9px -6px 10px 8px #a11111;
+    border-radius: 10px;
+    padding: 20px;
+    width: 220px;
+    text-align: center;
+  }
+  
+  .owner-img {
+    width: 80px;
+    height: 80px;
+    border-radius: 32%;
+    margin-bottom: 10px;
+  }
+  .garden-parking {
+    text-align: center;
+    padding: 40px 20px;
+  }
+  
+  .slider-section {
+    background-color: #f5f5dc;
+    padding: 30px 18px ;
+    text-align: center;
+    position: relative;
+  }
+  
+  .slider-container {
+    position: relative;
+    max-width: 1000px;
+    margin: auto;
+    overflow: hidden;
+    border: 7px solid #8b0000;
+    border-radius: 10px;
+    box-shadow: 0 0 20px #8b0000;
+  }
+  
+  .slider {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+  }
+  
+  .slide {
+    min-width: 100%;
+    height: 500px;
+    object-fit: cover;
+    display: none;
+  }
+  
+  .slide.active {
+    display: block;
+  }
+  
+  .prev,
+  .next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: #8b0000;
+    color: white;
+    border: none;
+    padding: 12px;
+    cursor: pointer;
+    font-size: 24px;
+    z-index: 10;
+    border-radius: 50%;
+    box-shadow: 0 0 10px #8b0000;
+  }
+  
+  .prev:hover,
+  .next:hover {
+    background-color: #fff;
+    color: #8b0000;
+  }
+  
+  .prev {
+    left: 10px;
+  }
+  
+  .next {
+    right: 10px;
+  }
+  /*العماير */
+  .scroll-wrapper {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    padding: 20px 0;
+    background: #f5f5dc; /* خلفية بيج فاتح */
+  }
+  
+  .buildings-slider {
+    display: flex;
+    gap: 20px;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    padding: 0 40px;
+  }
+  
+  .building-card, .more-card {
+    flex: 0 0 auto;
+    width: 250px;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+    text-align: center;
+    scroll-snap-align: start;
+    transition: transform 0.3s;
+  }
+  
+  .building-card:hover, .more-card:hover {
+    transform: scale(1.05);
+  }
+  
+  .building-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px 10px 0 0;
+  }
+  
+  .building-card h3, .more-card h3 {
+    margin: 10px 0;
+    color: #8B0000; /* أحمر دموي */
+  }
+  
+  .enter-btn {
+    display: inline-block;
+    margin-bottom: 15px;
+    padding: 8px 16px;
+    background: #8B0000;
+    color: white;
+    text-decoration: none;
+    border-radius: 20px;
+    transition: background 0.3s;
+  }
+  
+  .enter-btn:hover {
+    background: #f5f5dc;
+    color: #8B0000;
+    border: 1px solid #8B0000;
+  }
+  
+  /* أزرار الأسهم */
+  .scroll-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: #8B0000;
+    color: white;
+    border: none;
+    font-size: 24px;
+    padding: 4px 1px;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    cursor: pointer;
+    z-index: 10;
+    transition: background 0.3s;
+  }
+  
+  .scroll-btn:hover {
+    background: #f5f5dc;
+    color: #8B0000;
+    border: 1px solid #8B0000;
+  }
+  
+  .scroll-btn.left {
+    right: 10px;
+  }
+  
+  .scroll-btn.right {
+    left: 10px;
+  }
+  
+  /* شكل المزيد */
+  .more-card {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 28px;
+    background: #8B0000;
+    color: white;
+  }
+  .more-card:hover {
+    background: #f5f5dc;
+    color: #8B0000;
+    border: 1px solid #8B0000;
+  }
+  
+  
+  .enter-btn {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 6px 12px;
+    background-color: transparent;
+    color: #8b0000;
+    border: 2px solid #8b0000;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s;
+  }
+  .enter-btn:hover {
+    background-color: #8b0000;
+    color: #fff;
+  }
+  
+  .scroll-btn {
+    background-color: #ffffc3;
+    border: none;
+    color: rgb(168 16 16);
+    font-size: 24px;
+    padding: 8px 12px;
+    cursor: pointer;
+    border-radius: 50%;
+    margin: 0 10px;
+    box-shadow: 0 0 12px 8px #8b0000;
+  }
+  
+  .more-card {
+   
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 81px;
+    color: #cb0404;
+    background-color: #ffe0e0b8;
+    border: 8px solid #8b0000;
+    border-radius: 34px;
+    box-shadow: 0 0 10px 8px #470505;
+    text-decoration: none;
+    transition: all 0.3s ease;
+  }
+  
+  .more-card:hover {
+    background-color: #730808;
+    color: white;
+  }
+  
+  .dots {
+    font-size: 32px;
+    color: #8b0000;
+    transition: color 0.3s ease;
+  }
+  
+  .more-card:hover .dots {
+    color: #fff;
+  }
+  .h33{
+      margin: 3px;
+    color: black;
+    font-size: 27px;
+  }
+  .fixed-background {
+    position: relative;
+    background: url('../images/compound.jpg') no-repeat center center/cover;
+    height: 400px;
+    background-attachment: fixed; 
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 27px;
+    border-radius: 37px;
+    box-shadow: 0px 5px 8px 13px #b22222;
+    width: 100%;
+    height: 100vh;   
+  }
+  
+  /* طبقة خفيفة فوق الصورة */
+  .fixed-overlay {
+    background-color: rgba(0, 0, 0, 0.4); 
+    padding: 40px 80px;
+    border-radius: 20px;
+  }
+  
+  .fixed-overlay h2 {
+    color: white;
+    font-size: 36px;
+    text-align: center;
+  }
+
+  .features-section {
+    padding: 80px 20px;
+    background-color: #f8f4f0;
+    text-align: center;
+  }
+  
+  .section-title {
+    font-size: 36px;
+    color: #5c4033;
+    margin-bottom: 40px;
+  }
+  
+  .features-container {
+    display: flex;
+    justify-content: center;
+    gap: 48px;
+    flex-wrap: wrap;
+  }
+  
+  footer {
+    
+    padding: 20px 15px;
+    background-color: #330300;
+    border-top: 2px solid #8b0000;
+    border-top-left-radius: 55px;
+    border-top-right-radius: 55px;
+    box-shadow: -2px 2px 18px 12px #730808;  }
+
+  .footer-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+
+  .map-container {
+    width: 300px;
+    border: ridge 14px;
+    height: 297px;
+    padding: 25px;
+    background-color: #ffffb7;
+  }
+
+  .quick-links {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .footer-link {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 20px;
+  }
+
+  .footer-link:hover {
+    text-decoration: underline;
+  }
+
+  .rights {
+    color: #730808;
+    font-size: 14px;
+    text-align: center;
+    padding: 25px;
+  }
+
+  .islam {
+    
+    background: linear-gradient(135deg, #730808, rgb(34, 34, 34));
+    color: #e6e6b4;
+    border: none;
+    border-radius: 30px;
+    text-decoration: none;
+    font-size: 29px;
+    box-shadow: 0 0 9px 8px #730808;
+    transition: 0.3s ease;
+    padding: 15px;
+  }
+  .h11{
+    border: ridge 14px;
+    padding: 22px;
+    border-radius: 45px;
+    background-color: #ffffb7;
+  }
+  .pp{
+    color: white;
+    text-align: center;
+    font-size: 20px;
+  }
+  .map{
+    width: 285px;
+    height: 217px;
+    border-radius: 24px;
+    box-shadow: -2px 2px 18px 12px #730808;
+  }
+  .h12{
+    color: #730808;
+    text-align: center;
+    font-size: 30px;
+
+  }
+  .name1{
+    display: flex;
+  }
+  .h13{
+    padding: 45px;
+  }
+
+  /* شبكة العمارات */
+.buildings-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 30px;
+  padding: 50px;
+  background-color: #f5f0e1; /* بيج فاتح */
+}
+
+/* كل كارت عمارة */
+.building-card {
+  background: #ffeab1;
+  border: 2px solid #8b0000; /* احمر دموي */
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 8px 20px rgba(139, 0, 0, 0.3);
+  text-align: center;
+  padding: 20px;
+  transform: translateY(100px);
+  opacity: 0;
+  animation: slideUp 1s forwards;
+}
+
+/* تأخير بسيط بين الكروت */
+.building-card:nth-child(odd) {
+  animation-delay: 0.3s;
+}
+.building-card:nth-child(even) {
+  animation-delay: 0.6s;
+}
+
+/* الصورة داخل الكارت */
+.building-card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 10px;
+  margin-bottom: 15px;
+}
+
+/* عنوان العمارة */
+.building-card h3 {
+  font-size: 22px;
+  margin: 10px 0;
+  color: #8b0000;
+}
+
+/* زر الدخول */
+.enter-btn {
+  display: inline-block;
+  margin-top: 10px;
+  padding: 10px 20px;
+  background-color: #8b0000;
+  color: white;
+  text-decoration: none;
+  border-radius: 8px;
+  transition: 0.3s;
+}
+
+/* تأثير الزر */
+.enter-btn:hover {
+  background-color: white;
+  color: #8b0000;
+  border: 2px solid #8b0000;
+}
+
+/* أنيميشن طلوع الكارت */
+@keyframes slideUp {
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+/* تأثير عند المرور على الكارت */
+.building-card:hover {
+  transform: translateY(-10px) scale(1.02);
+  box-shadow: 0 12px 25px rgba(139, 0, 0, 0.5);
+  transition: 0.4s;
+}
+.features {
+  background-color: #f5f5dc;
+  padding: 50px 20px;
+  text-align: center;
+}
+
+.features h2 {
+  font-size: 36px;
+  color: #8b0000;
+  margin-bottom: 40px;
+}
+
+.features-container {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+.feature-card {
+    background-color: rgb(255, 248, 182);
+    border: 2px solid #8b0000;
+    padding: 20px;
+    width: 280px;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+
+
+}
+
+.feature-card img {
+  width: 130px;
+  height: 135px;
+  border-radius: 22px;
+  margin-bottom: 20px;
+}
+
+.feature-card h3 {
+  color: #8b0000;
+  margin-bottom: 10px;
+}
+
+.feature-card p {
+  color: #333;
+  font-size: 16px;
+}
+
+.feature-card:hover {
+  transform: translateY(-10px);
+}
+
+/* citizen-style.css */
+
+
+
+body {
+  font-family: 'Cairo', sans-serif;
+  background-color: #f8f4e3;
+  margin: 0;
+  padding: 0;
+}
+
+.citizen-header {
+  background-color: #8B0000;
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+
+.citizen-title {
+  font-size: 28px;
+  margin: 0;
+}
+
+/* هنا بقى نعرضهم جمب بعض ونحط حركة */
+.citizen-services {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  margin: 40px 20px;
+  animation: slideIn 1s ease-out forwards;
+}
+
+/* كل لينك شكله كارت */
+.citizen-service-link {
+  display: block;
+  width: 200px;
+  background-color: #ffffb7;
+  color: #8B0000;
+  text-decoration: none;
+  padding: 20px 10px;
+  border: 2px solid #8B0000;
+  border-radius: 12px;
+  text-align: center;
+  font-size: 20px;
+  font-weight: bold;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transform: translateX(100px);
+  opacity: 0;
+  animation: fadeInMove 1s ease forwards;
+    /* نضيف دول */
+    animation: fadeInMove 1s ease forwards;
+    animation-delay: var(--delay, 0s);
+  }
+  
+  /* عشان يتحكم في التأخير */
+  .citizen-service-link:nth-child(1) {
+    --delay: 0.1s;
+  }
+  
+  .citizen-service-link:nth-child(2) {
+    --delay: 0.2s;
+  }
+  
+  .citizen-service-link:nth-child(3) {
+    --delay: 0.3s;
+  }
+  
+  .citizen-service-link:nth-child(4) {
+    --delay: 0.4s;
+  }
+  
+  .citizen-service-link:nth-child(5) {
+    --delay: 0.5s;
+  }
+  
+  .citizen-service-link:nth-child(6) {
+    --delay: 0.6s;
+  }
+  
+
+
+.citizen-service-link:hover {
+  background-color: #8B0000;
+  color: white;
+  box-shadow: 0 0 15px #8B0000;
+  transform: scale(1.05);
+}
+
+/* انيميشن لما الصفحة تفتح */
+@keyframes fadeInMove {
+  from {
+    opacity: 0;
+    transform: translateX(100px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+/* لو عاوز كل السيكشن يدخل من الجنب */
+@keyframes slideIn {
+  from {
+    opacity: 0;
+    transform: translateX(150px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.citizen-footer {
+  background-color: #8B0000;
+  color: white;
+  text-align: center;
+  padding: 10px;
+  margin-top: 40px;
+}
+
+.citizen-footer-text {
+  margin: 0;
+  font-size: 14px;
+}
+body {
+  font-family: 'Cairo', sans-serif;
+  background-color: #f8f4e3;
+  margin: 0;
+  padding: 0;
+}
+
+.form-popup {
+  position: fixed;
+  bottom: 80px;
+  right: 30px;
+  background-color: white;
+  border: 3px solid #8B0000;
+  z-index: 1000;
+  padding: 20px;
+  border-radius: 10px;
+  width: 300px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+}
+
+.form-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-container input,
+.form-container textarea {
+  margin-bottom: 10px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.form-container .btn {
+  background-color: #8B0000;
+  color: white;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+.form-container .btn.cancel {
+  background-color: gray;
+}

@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+  <meta charset="UTF-8">
+  <title>عن الكومباوند</title>
+  <style>
+    body {
+      font-family: 'Arial', sans-serif;
+      direction: rtl;
+      background-color: #ffeb9c;      /* بيج */
+      margin: 0;
+      padding: 0;
+      color: #8b0000; /* أحمر دموي */
+    }
+
+    .header {
+      background: linear-gradient(135deg, #8b0000, #4b0000);
+      color: white;
+      padding: 30px 20px;
+      text-align: center;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+    }
+
+    .header h1 {
+      margin: 0;
+      font-size: 32px;
+    }
+
+    .content {
+        max-width: 800px;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: #5b110c;
+    border-radius: 12px;
+    box-shadow: 0 0 15px 20px rgb(194 11 11);
+    line-height: 1.8;
+    font-size: 22px;
+    color: #fff27b;
+    }
+
+    .highlight {
+      color: #ffffff;
+      font-weight: bold;
+    }
+
+    .footer {
+      background-color: #4b0000;
+      color: #fff;
+      text-align: center;
+      padding: 15px;
+      position: relative;
+      margin-top: 50px;
+    }
+      /*الشريط 2*/
+  .main-header {
+    background-color: #ffffc3;
+    padding: 35px 0;
+    box-shadow: 0px 2px 16px 7px rgb(168 16 16);
+    border-bottom-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+}
+
+.nav-bar {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 0 20px;
+}
+
+.nav-links {
+  display: flex;
+  gap: 20px;
+}
+
+.nav-links a {
+  color: #8b0000; /* أحمر دموي */
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 18px;
+  position: relative;
+  transition: color 0.3s ease;
+}
+
+.nav-links a::after {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 2px;
+  background-color: #8b0000;
+  bottom: -5px;
+  left: 50%;
+  transform: translateX(-50%);
+  transition: width 0.3s ease;
+}
+
+.nav-links a:hover {
+  color: #b22222;
+}
+
+.nav-links a:hover::after {
+  width: 100%;
+}
+
+.logo img {
+  height: 70px;
+  width: auto;
+  transition: transform 0.3s ease;
+}
+
+.logo img:hover {
+  transform: scale(1.1);
+}
+
+/* موبايل */
+@media (max-width: 768px) {
+  .nav-bar {
+    flex-direction: row;
+    display: flex;
+    align-items: center;
+  }
+
+  .nav-links {
+    margin: 10px 0;
+  }
+}
+.main-header {
+  background-color: #ffffbe;
+  padding: 15px 0;
+  box-shadow: -1px 8px 18px 8px #730808;
+}
+
+.nav-bar {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 0 20px;
+}
+
+.nav-links {
+  display: flex;
+  gap: 20px;
+}
+
+.nav-links a {
+  color: #8b0000; /* أحمر دموي */
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 18px;
+  position: relative;
+  transition: color 0.3s ease;
+}
+
+.nav-links a::after {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 2px;
+  background-color: #8b0000;
+  bottom: -5px;
+  left: 50%;
+  transform: translateX(-50%);
+  transition: width 0.3s ease;
+}
+
+.nav-links a:hover {
+  color: #b22222;
+}
+
+.nav-links a:hover::after {
+  width: 100%;
+}
+
+.logo img {
+  height: 70px;
+  width: auto;
+  transition: transform 0.3s ease;
+}
+
+.logo img:hover {
+  transform: scale(1.1);
+}
+
+/* منيو المواطن */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropbtn {
+  background-color: #f5f5dc; /* بيج */
+  color: #8b0000;
+  padding: 16px;
+  font-size: 18px;
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+  transition: color 0.3s ease;
+  margin-top: -19px;
+
+}
+
+.dropbtn:hover {
+  color: #b22222;
+}
+
+.dropbtn::after {
+  content: " ▼"; /* السهم */
+  font-size: 14px;
+  margin-left: 5px;
+  
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f5f5dc;
+  min-width: 48px;
+  box-shadow: 0px 8px 16px rgb(247 12 12 / 81%);
+  z-index: 1;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown-content a {
+  color: #8b0000;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {
+  color: #b22222;
+}
+
+/* الموبايل */
+@media (max-width: 768px) {
+  .nav-bar {
+    flex-direction: row;
+    display: flex;
+  }
+
+  .nav-links {
+      flex-direction: column;
+      gap: 10px;
+  }
+
+  .dropbtn {
+      font-size: 16px;
+  }
+}
+
+  </style>
+</head>
+<body>
+    <header class="main-header">
+        <nav class="nav-bar">
+          <div class="nav-links left-links">
+            <a href="index.html">الرئيسية</a>
+            <a href="about-kompound.html">عن الكومباوند</a>
+          </div>
+      
+          <div class="logo">
+            <img src="images/logo.png" alt="Logo">
+          </div>
+          <div class="nav-links">
+            <a href="mowaten.html">المواطن</a>
+            <a href="Register.html">التسجيل</a>
+            <a href="Login.html">تسجيل الدخول</a>
+          </div>
+        </nav>
+      </header>
+  
+      <div class="content">
+        <p>
+          في قلب <span class="highlight">دار مصر غرب المال والأعمال</span>، تجد الراحة، والأمان، والتنظيم. كل زاوية هنا تحكي قصة هندسية مدروسة، ومساحات خضراء تحيط بك من كل جانب.
+        </p>
+    
+        <p>
+          صُمم الكومباوند ليمنحك حياة هادئة وآمنة، محاطة بكل الخدمات التي تحتاجها. من الحدائق المنظمة، إلى أماكن الانتظار، إلى الخدمات الذكية... كل شيء هنا يعكس العناية بالتفاصيل.
+        </p>
+    
+        <p>
+          الأهم من كل ذلك هو <span class="highlight">اتحاد الملاك</span>، القلب النابض للكومباوند. هم الجهة التي تضمن استمرار النظام، وتطوير الخدمات، وحماية حقوق الجميع. اتحادنا ليس مجرد إدارة... بل هو شراكة حقيقية بين السكان.
+        </p>
+    
+        <p>
+          نرحب بك في مجتمعنا، حيث تسكن الطمأنينة، ويعلو صوت التعاون والاحترام.
+        </p>
+      </div>
+    
+      <div class="footer">
+        جميع الحقوق محفوظة &copy; 2025 - دار مصر غرب المال والأعمال
+      </div>
+</body>
+</html>
