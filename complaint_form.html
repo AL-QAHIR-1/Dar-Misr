@@ -295,7 +295,15 @@
   <div class="container">
     <h2>تقديم شكوى</h2>
     
-    
+    <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-JE8TY06ELT"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-JE8TY06ELT');
+</script>
         <?php if (isset($_GET['success'])): ?>
           <div class="success-message">تم إرسال الشكوى بنجاح!</div>
         <?php endif; ?>
